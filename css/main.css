@@ -55,7 +55,8 @@ a{
     text-align: center;
 }
 a:hover, button:hover{
-    transition: color 0.6s linear;
+    transition: color 0.6s linear, background-color 0.4s linear;
+    
 }
 .h-page a, .our-news a{
     color: rgb(49,53,62);
@@ -100,16 +101,16 @@ h1, h2, h3, .meals h2+p{
 .h-page menu li a{
     text-align: center;
     padding: 12px 20px 15px;
+    border-radius: 25px;
 }
 menu{
     float: right;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 55px;
+    margin-bottom: 45px;
 }
 menu li a:hover{
     color: rgb(255,255,255);
     background-color: rgb(221,75,43);
-    display: inline-block;
     border-radius: 25px;
 }
 .meals{
@@ -186,7 +187,7 @@ a.red-hov:hover{
 }
 .newsletter h2 {
     font-size: 30px;
-    margin: 75px auto 10px;
+    margin: 70px auto 10px;
 }
 .newsletter h2+p{
     padding: 0 330px;
@@ -198,24 +199,33 @@ input[type=email]{
     padding: 10px 0 15px 30px;
     width: 510px;
     margin: 35px 0 95px 330px;
+    outline: none;
 }
+    /*белый placeholder*/
 input[type=email]::-webkit-input-placeholder {
+    color: rgb(255,255,255);
+}
+input[type=email]:-moz-placeholder {
+    color: rgb(255,255,255);
+}
+input[type=email]:-ms-input-placeholder{
     color: rgb(255,255,255);
 }
 input[type=email]::-moz-placeholder {
     color: rgb(255,255,255);
 }
+    /*убирание placeholder при фокусе*/
 input[type=email]:focus::-webkit-input-placeholder {
-    color: transparent
+    color: transparent;
 }
 input[type=email]:focus::-moz-placeholder {
-    color: transparent
+    color: transparent;
 }
 input[type=email]:focus:-moz-placeholder {
-    color: transparent
+    color: transparent;
 }
 input[type=email]:focus:-ms-input-placeholder {
-    color: transparent
+    color: transparent;
 }
 button.button{
     color: rgb(92,35,22);
