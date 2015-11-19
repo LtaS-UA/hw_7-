@@ -1,0 +1,301 @@
+/*=================================================================================================================
+    YOUR STYLE here
+  ================================================================================================================= */
+/* ie hack
+ don't remove that style*/
+.m-page {
+    display: block;
+}
+/* use to align content */
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container::before,
+.container::after,
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+}
+.container::after,
+.clearfix::after{
+    clear: both;
+}
+/*=================================================================================================================
+    YOUR STYLE here
+  ================================================================================================================= */
+
+body{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 18px;
+    color: rgb(49,53,62);
+}
+.meals-menu h3~p, .our-news h3~p, .newsletter h2~p, .news h3~p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 2em;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    width: 210px;
+    border-radius: 25px;
+    background-color: rgb(255,255,255);
+    padding: 10px 0 15px;
+    display: block;
+    text-align: center;
+}
+a:hover, button:hover{
+    transition: color 0.6s linear;
+}
+.h-page a, .our-news a{
+    color: rgb(49,53,62);
+}
+.centered{
+    text-align: center;
+}
+h1, h2, h3, .meals h2+p{
+    font-weight: bold;
+}
+.wrapper {
+    overflow: hidden;
+    min-width: 1170px;
+}
+.h-page{
+    width: 100%;
+    background-color: rgb(237,239,241);
+    position: fixed;
+    color: rgb(49,53,62);
+    z-index: 9999;
+}
+.logo{
+    width: 160px;
+    float: left;
+    padding: 38px 0;
+    margin: 0;
+}
+.logo h1{
+    margin: 0;
+}
+.h-page .logo a{
+    font-size: 36px;
+}
+.h-page .logo span{
+    color: rgb(221,75,43);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.h-page menu li{
+    display: inline-block;
+}
+.h-page menu li a{
+    text-align: center;
+    padding: 12px 20px 15px;
+}
+menu{
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+menu li a:hover{
+    color: rgb(255,255,255);
+    background-color: rgb(221,75,43);
+    display: inline-block;
+    border-radius: 25px;
+}
+.meals{
+    background: url(../img/meals-bg.jpg) no-repeat center rgb(0,0,0);
+    color: rgb(255,255,255);
+}
+.meals h2.title{
+    font-size: 72px;
+    margin: 463px auto 0;
+    font-weight: 100;
+}
+.meals h2+p{
+    font-size: 30px;
+    margin: 0 auto;
+}
+.meals-menu{
+    margin-top: 125px;
+}
+.meals-menu h3{
+    font-size: 30px;
+    margin: 10px auto 20px;
+}
+.meals-menu h3 a{
+    color: rgb(255,255,255);
+}
+.meals-menu h3 a:hover{
+    color: rgb(123,43,221);
+}
+.meals a.button{
+    color: rgb(97,35,22);
+    margin: 55px auto 130px;
+}
+.meals a.button:hover, .newsletter .button:hover, .our-news .button:hover{
+    color: rgb(255,255,255);
+    background-color: rgb(221,75,43);
+}
+.our-news{
+    background-color: rgb(237,239,241);
+}
+.our-news h2{
+    margin: 75px auto 80px;
+    font-size: 30px;
+}
+.our-news ul li, .meals ul li, .list-of-meals .container>ul>li{
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: top;
+}
+.our-news ul li, .meals ul li {
+    width: 370px;
+}
+.meals ul li p, .our-news ul li p{
+    padding: 0 20px;
+}
+.our-news ul li:nth-child(3n+1),.meals ul li:nth-child(3n+1), .list-of-meals .container>ul>li:nth-child(3n+1){
+    margin-left: 0;
+}
+.our-news h3{
+    font-size: 24px;
+    padding: 0 20px;
+    margin: 30px auto 0;
+}
+a.red-hov:hover{
+    color: rgb(229,60,27);
+}
+.our-news a.button{
+    width: 175px;
+    font-size: 15px;
+    margin: 35px auto 85px;
+}
+.newsletter, .f-page{
+    background: url(../img/bg-humburger.jpg) no-repeat bottom rgb(132,80,23);
+    color: rgb(255,255,255);
+}
+.newsletter h2 {
+    font-size: 30px;
+    margin: 75px auto 10px;
+}
+.newsletter h2+p{
+    padding: 0 330px;
+}
+input[type=email]{
+    border: 1px solid rgb(255,255,255);
+    background: transparent;
+    border-radius: 25px;
+    padding: 10px 0 15px 30px;
+    width: 510px;
+    margin: 35px 0 95px 330px;
+}
+input[type=email]::-webkit-input-placeholder {
+    color: rgb(255,255,255);
+}
+input[type=email]::-moz-placeholder {
+    color: rgb(255,255,255);
+}
+input[type=email]:focus::-webkit-input-placeholder {
+    color: transparent
+}
+input[type=email]:focus::-moz-placeholder {
+    color: transparent
+}
+input[type=email]:focus:-moz-placeholder {
+    color: transparent
+}
+input[type=email]:focus:-ms-input-placeholder {
+    color: transparent
+}
+button.button{
+    color: rgb(92,35,22);
+    display: inline-block;
+    position: relative;
+    left:-214px;
+    border: 0;
+}
+.news{
+    background-color: rgb(255,255,255);
+}
+.news h3{
+    font-size: 30px;
+}
+.news article>div{
+    width: 570px;
+}
+.news article{
+    margin-top: 60px;
+    position: relative;
+}
+.news article:nth-child(even){
+    float: right;
+}
+.news article:nth-child(even) img {
+    position: absolute;
+    top: 0;
+    left: -625px;
+}
+.news article:nth-child(odd) img{
+    position: absolute;
+    top:0;
+    right: -45px;
+}
+.news article:nth-child(odd) .button{
+    background-color: rgb(221,75,43);
+}
+.news article:nth-child(even) .button{
+    background-color: rgb(75,78,115);
+}
+.news article .button{
+    margin: 50px 0;
+    color: rgb(255,255,255)
+}
+.news article:nth-child(odd) .button:hover{
+    color: rgb(45,0,0);
+    background-color: rgb(37,199,75);
+}
+.news article:nth-child(even) .button:hover{
+    color: rgb(45,0,0);
+    background-color: rgb(229,60,27);
+}
+.news article:last-child{
+    margin-bottom: 90px;
+}
+.list-of-meals {
+    background-color: rgb(215,93,14);
+}
+.list-of-meals .container>ul{
+    margin: 90px 0 75px;
+}
+.list-of-meals ul li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 370px;
+    color: rgb(255,255,255);
+    font-weight: 100;
+    line-height: 2em;
+}
+.f-page p:first-of-type{
+    margin-top: 90px;
+}
+.f-page p{
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.f-page a{
+    color: rgb(255,255,255);
+    font-weight: bold;
+}
+.f-page a:hover{
+    color: rgb(215,93,14);
+}
